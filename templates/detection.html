@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detection Results</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <center>
+        <h1>License Plate Detection Results</h1>
+
+        
+        <h3>Image:</h3>
+        <img src="{{ url_for('img') }}" alt=" Image">
+        
+        <h3>Processed Image:</h3>
+
+        <img src="{{ url_for('load_img') }}" alt="Processed Image">
+
+        <br><br>
+        <a href="/" class='btn'>Upload Another Image</a>
+    </center>
+</body>
+</html>
